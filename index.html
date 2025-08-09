@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Just One Thing</title>
+
+  <style>
+    :root{
+      --bg: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #111827;
+      --card: #f8fafc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root{
+        --bg: #0b1220;
+        --text: #e6eef6;
+        --muted: #9aa6b2;
+        --card: #071024;
+      }
+    }
+
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+    }
+
+    .container{
+      max-width:900px;
+      margin:48px auto;
+      padding:24px;
+      background:var(--card);
+      border-radius:12px;
+      box-shadow: 0 6px 18px rgba(10,10,10,0.04);
+    }
+
+    header h1{
+      margin:0 0 6px 0;
+      font-size:28px;
+      line-height:1.1;
+    }
+
+    header p{
+      margin:0 0 18px 0;
+      color:var(--muted);
+    }
+
+    h2{
+      margin-top:28px;
+      font-size:20px;
+    }
+
+    ul { padding-left: 1.15rem; margin-top:8px; }
+
+    a { color:var(--accent); text-decoration: underline; }
+
+    footer {
+      margin-top:28px;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+
+    code { background:#0000; font-family:monospace; padding:2px 6px; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="title">
+    <header>
+      <h1 id="title">Privacy Policy for <strong>Just One Thing</strong></h1>
+      <p><strong>Effective date:</strong> <span id="effective-date">9th August 2025</span></p>
+    </header>
+
+    <section aria-labelledby="what-we-collect">
+      <h2 id="what-we-collect">1. Information We Collect</h2>
+      <p>
+        We designed Just One Thing to be simple and private. We do <strong>not</strong> collect personally
+        identifiable information such as your name, email address, or contact details through the app.
+      </p>
+
+      <p>The app may store the following data <strong>locally on your device</strong>:</p>
+      <ul>
+        <li>Tasks you create and complete</li>
+        <li>Your task streaks and progress</li>
+        <li>App preferences (e.g., settings)</li>
+      </ul>
+
+      <p>
+        We may use anonymous analytics (via Firebase or similar tools) to understand how the app is used and
+        improve features. This data:
+      </p>
+      <ul>
+        <li>Does not identify you personally</li>
+        <li>May include app usage patterns, device type, and general location (city/region)</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="how-we-use">
+      <h2 id="how-we-use">2. How We Use Your Information</h2>
+
+      <p>We use anonymous analytics to:</p>
+      <ul>
+        <li>Improve app functionality</li>
+        <li>Identify and fix bugs</li>
+        <li>Understand feature popularity</li>
+      </ul>
+
+      <p>We do not:</p>
+      <ul>
+        <li>Sell your data</li>
+        <li>Share your personal details with third parties</li>
+        <li>Use your data for targeted advertising</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="storage">
+      <h2 id="storage">3. Data Storage and Security</h2>
+      <p>
+        Your personal tasks and progress are stored <strong>locally on your device</strong>. Analytics data is processed
+        securely through our analytics provider and handled according to their privacy policies.
+      </p>
+    </section>
+
+    <section aria-labelledby="third-party">
+      <h2 id="third-party">4. Third-Party Services</h2>
+      <p>Just One Thing may use the following third-party services:</p>
+      <ul>
+        <li>
+          <strong>Firebase Analytics</strong> — to collect anonymous usage statistics.
+          You can review Firebase’s privacy policy here:
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+            firebase.google.com/support/privacy
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="choices">
+      <h2 id="choices">5. Your Choices</h2>
+      <p>You can:</p>
+      <ul>
+        <li>Reset your data by deleting and reinstalling the app</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">6. Contact Us</h2>
+      <p>
+        If you have any questions about this Privacy Policy or your data, you can contact us at:
+      </p>
+      <p>
+        <strong>Tyler Ferrington</strong><br />
+        Email:
+        <a href="mailto: tylerferrington@gmail.com" id="contact-email">[your.email@example.com]</a>
+      </p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">7. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. If we make significant changes, we will update the
+        “Effective date” above and, where appropriate, notify you within the app.
+      </p>
+    </section>
+
+    <footer>
+      <p>Last updated: <span id="updated-date">[TODAY_DATE]</span></p>
+    </footer>
+  </main>
+
+  <script>
+    // Optional: auto-fill today's date. Remove if you prefer to manually set a date.
+    (function fillDates(){
+      const today = new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+      document.getElementById('effective-date').textContent = today;
+      document.getElementById('updated-date').textContent = today;
+
+      // Replace contact placeholder link if you want to programmatically set it here:
+      // const email = "you@yourdomain.com";
+      // document.getElementById('contact-email').href = 'mailto:' + email;
+      // document.getElementById('contact-email').textContent = email;
+    })();
+  </script>
+</body>
+</html>
